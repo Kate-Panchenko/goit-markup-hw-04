@@ -6,7 +6,8 @@
     --primary-white-color: #FFFFFF;
     --primary-black-color: #000000;
     --logo-font: 'Raleway', sans-serif;
-    --secondary-bcg-color: #2F303A;
+    --hero-bcg-color: #C4C4C4;
+    --footer-bcg-color: #2F303A;
     --primary-grey-color: #F5F4FA;
     --opacity-white: rgba(255, 255, 255, 0.6);
     --border-color: #EEEEEE;
@@ -129,8 +130,7 @@ ul, ol {
 }
 
 .menu-link, 
-.page-header-email,
-.page-header-phone-number {
+.contact {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -149,25 +149,32 @@ ul, ol {
     margin-right: 50px;
 }
 
-.page-header-email,
-.page-header-phone-number {
+.contact {
     color: var(--secondary-text-color);
+    display: flex;
+    align-items: center;  
+}
+
+.icon-header {
+    fill: currentColor;
+    margin-right: 10px;
 }
 
 .menu-link:hover,
 .menu-link:focus,
-.page-header-email:hover,
-.page-header-email:focus,
-.page-header-phone-number:hover,
-.page-header-phone-number:focus {
+.contact:hover,
+.contact:focus {
     color: var(--accent-color);
 }
 
 .hero {
-    background-color: var(--secondary-bcg-color);
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
+    background-color: var(--hero-bcg-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+    url(../images/hero_bg.jpg);
+    background-size: cover;
 }
 
 .hero-title {
@@ -275,7 +282,7 @@ ul, ol {
 }
 
 .page-footer {
-    background-color: var(--secondary-bcg-color);
+    background-color: var(--footer-bcg-color);
     padding-top: 60px;
     padding-bottom: 60px;
 }
