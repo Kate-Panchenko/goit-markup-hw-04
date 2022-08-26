@@ -10,6 +10,7 @@
     --footer-bcg-color: #2F303A;
     --primary-grey-color: #F5F4FA;
     --opacity-white: rgba(255, 255, 255, 0.6);
+    --footer-icon-bcg: rgba(255, 255, 255, 0.1);
     --border-color: #EEEEEE;
     --header-border: #ECECEC;
     --icon-color: #AFB1B8;
@@ -43,6 +44,8 @@ ul, ol {
     margin-bottom: 0;
     padding-left: 0;
 }
+
+/* Common classes  */
 
 .container {
     width: 1200px;
@@ -82,6 +85,8 @@ ul, ol {
     margin: -1px;
 }
 
+/* LOGO */
+
 .logo-header,
 .logo-footer, 
 .logo-black, 
@@ -106,6 +111,8 @@ ul, ol {
 .logo-white {
     color: var(--primary-white-color);
 }
+
+/* HEADER */
 
 .menu .menu-link.current {
     color: var(--accent-color);
@@ -138,6 +145,12 @@ ul, ol {
     letter-spacing: 0.02em;
 }
 
+.contact {
+    color: var(--secondary-text-color);
+    display: flex;
+    align-items: center;
+}
+
 .menu-link {
     color: var(--primary-text-color);
 }
@@ -148,12 +161,6 @@ ul, ol {
 
 .page-header-contacts-item:not(:last-child) {
     margin-right: 50px;
-}
-
-.contact {
-    color: var(--secondary-text-color);
-    display: flex;
-    align-items: center;  
 }
 
 .icon-header {
@@ -167,6 +174,8 @@ ul, ol {
 .contact:focus {
     color: var(--accent-color);
 }
+
+/* HERO */
 
 .hero {
     padding-top: 200px;
@@ -193,6 +202,8 @@ ul, ol {
     color: var(--primary-white-color);
 }
 
+/* BUTTON */
+
 .modal-open-btn {
     font-weight: 700;
     font-size: 16px;
@@ -213,6 +224,8 @@ ul, ol {
     color: var(--primary-white-color);
     background-color: var(--active-accent-color);
 }
+
+/* ADVANTAGES */
 
 .advantages-list{
     display: flex;
@@ -251,6 +264,8 @@ ul, ol {
     color: var(--secondary-text-color);
 }
 
+/* GALLERY */
+
 .gallery {
     padding-bottom: 94px;
 }
@@ -259,6 +274,8 @@ ul, ol {
     display: flex;
     justify-content: space-between;
 }
+
+/* TEAM */
 
 .team {
     background-color: var(--primary-grey-color);
@@ -326,6 +343,8 @@ ul, ol {
     fill: var(--primary-white-color);
 }
 
+/* CLIENTS */
+
 .clients {
     padding-bottom: 94px;
 }
@@ -356,14 +375,25 @@ ul, ol {
     border: 1px solid var(--accent-color);
 }
 
+/* FOOTER */
+
 .page-footer {
     background-color: var(--footer-bcg-color);
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
+.footer-sections {
+    display: flex;
+}
+
+.footer-address {
+    margin-right: 70px;
+}
+
 .footer-info {
     margin-top: 20px;
+    width: 231px;
 }
 
 .footer-info-item:not(:last-child) {
@@ -387,6 +417,34 @@ ul, ol {
 .page-footer-phone-number:focus {
     color: var(--primary-white-color);
 }
+
+.footer-social-links {
+    padding-top: 12px;
+}
+
+.footer-sl-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+}
+
+.footer-social-links-list {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.footer-link {
+    background-color: var(--footer-icon-bcg);
+}
+
+.footer-icon {
+    fill: var(--primary-white-color);
+}
+
+/* Portfolio */
 
 .portfolio {
     padding-bottom: 94px;
