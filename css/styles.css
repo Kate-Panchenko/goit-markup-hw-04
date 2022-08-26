@@ -356,7 +356,7 @@ ul, ol {
 }
 
 .clients-list-item {
-    flex-basis: calc((100%-150px) / 6);
+    flex-basis: calc((100% - 150px) / 6);
 }
 
 .client {
@@ -385,6 +385,7 @@ ul, ol {
 
 .footer-sections {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-address {
@@ -416,10 +417,6 @@ ul, ol {
 .page-footer-phone-number:hover,
 .page-footer-phone-number:focus {
     color: var(--primary-white-color);
-}
-
-.footer-social-links {
-    padding-top: 12px;
 }
 
 .footer-sl-title {
