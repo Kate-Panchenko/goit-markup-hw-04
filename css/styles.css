@@ -18,6 +18,7 @@
 
 .link {
     text-decoration: none;
+    display: inline-block;
 }
 
 .list {
@@ -246,10 +247,7 @@ ul, ol {
     align-items: center;
     height: 120px;
     border-radius: 4px;
-}
-
-.advantages-info {
-    padding-top: 30px;
+    margin-bottom: 30px;
 }
 
 .advantages-subtitle {
@@ -488,8 +486,8 @@ ul, ol {
 
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio-item-link:hover,
+.portfolio-item-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
